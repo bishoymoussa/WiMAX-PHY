@@ -1,0 +1,213 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/simulation/modelsim
+Efft
+Z1 w1523958342
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT/simulation/FFT.vhd
+Z6 FE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT/simulation/FFT.vhd
+l0
+L9
+VKmPhKbP4XVn]4NGaZ04oE3
+!s100 CI7T8N@kK<T0;:?FVmS:>1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1524562102
+!i10b 1
+Z9 !s108 1524562102.000000
+Z10 !s90 -reportprogress|300|E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT/simulation/FFT.vhd|
+Z11 !s107 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT/simulation/FFT.vhd|
+!i113 1
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 3 fft 0 22 KmPhKbP4XVn]4NGaZ04oE3
+l56
+L32
+V;U>Nmhj=;V38hKn?BDA_e1
+!s100 IDSjWmEadR?o17A`G7U8>2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+Efft128
+Z13 w1524560841
+R2
+R3
+R4
+R0
+Z14 8E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128.vhd
+Z15 FE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128.vhd
+l0
+L5
+VRQ>^gh58j_RzZnNBS=G?l0
+!s100 7f3j4`e^DigRGW2hH`8VU0
+R7
+31
+Z16 !s110 1524562103
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128.vhd|
+Z18 !s107 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128.vhd|
+!i113 1
+Z19 o-93 -work work
+R12
+Artl
+R2
+R3
+R4
+DEx4 work 6 fft128 0 22 RQ>^gh58j_RzZnNBS=G?l0
+l85
+L10
+Va>_R]azlF51ie5Mj2OQ2=0
+!s100 6XhQ^W2S:lbbQH3kizBG`0
+R7
+31
+R16
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R19
+R12
+Efft128_tb
+Z20 w1523964391
+R2
+R3
+R4
+R0
+Z21 8E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128_TB.vhd
+Z22 FE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128_TB.vhd
+l0
+L5
+Vn7P1hYTG>cj_5K8FOoUi91
+!s100 6ldJF:zRTIdW?b@Ja<:<z1
+R7
+31
+Z23 !s110 1524562104
+!i10b 1
+Z24 !s108 1524562104.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128_TB.vhd|
+Z26 !s107 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/FFT128_TB.vhd|
+!i113 1
+R19
+R12
+Artl_tb
+R2
+R3
+R4
+DEx4 work 9 fft128_tb 0 22 n7P1hYTG>cj_5K8FOoUi91
+l20
+L8
+VzG:Cz;>P1ITF5W7R:UC<?3
+!s100 _Y4VP:b`QbbNzdZ6]F^Yz3
+R7
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R19
+R12
+Eimg_input
+Z27 w1523959425
+Z28 DPx9 altera_mf 20 altera_mf_components 0 22 :YRc5<ojH^WgP]^Vezi9c1
+R3
+R4
+R0
+Z29 8E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Img_input.vhd
+Z30 FE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Img_input.vhd
+l0
+L43
+V`1YiaUC]IDf?@USHOQn=D1
+!s100 YS@8V7n:h16P5RB5c@Bnf3
+R7
+31
+R16
+!i10b 1
+Z31 !s108 1524562103.000000
+Z32 !s90 -reportprogress|300|-93|-work|work|E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Img_input.vhd|
+Z33 !s107 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Img_input.vhd|
+!i113 1
+R19
+R12
+Asyn
+R28
+R3
+R4
+DEx4 work 9 img_input 0 22 `1YiaUC]IDf?@USHOQn=D1
+l60
+L56
+Vg^QFgWIY<Y@WSEl<6P[S>0
+!s100 G7eW4P0I:3enH1U[00LS?2
+R7
+31
+R16
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R19
+R12
+Ereal_input
+Z34 w1523959352
+R28
+R3
+R4
+R0
+Z35 8E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Real_input.vhd
+Z36 FE:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Real_input.vhd
+l0
+L43
+VQbKac8DJzbd?5g^fH1;NN1
+!s100 TfWgRLW6Q4A;L758Gg[B10
+R7
+31
+R16
+!i10b 1
+R31
+Z37 !s90 -reportprogress|300|-93|-work|work|E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Real_input.vhd|
+Z38 !s107 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT_test/Real_input.vhd|
+!i113 1
+R19
+R12
+Asyn
+R28
+R3
+R4
+DEx4 work 10 real_input 0 22 QbKac8DJzbd?5g^fH1;NN1
+l60
+L56
+V1lI`hX`_ASA<aCoG^2QXY3
+!s100 F[z?XIen0RTdEA6fZ7K>J3
+R7
+31
+R16
+!i10b 1
+R31
+R37
+R38
+!i113 1
+R19
+R12

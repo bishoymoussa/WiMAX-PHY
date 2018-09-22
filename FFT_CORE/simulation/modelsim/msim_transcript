@@ -1,0 +1,1452 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do FFT_run_msim_rtl_vhdl.do
+# if ![file isdirectory FFT_iputf_libs] {
+# 	file mkdir FFT_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib FFT_iputf_libs/fft_ii_0
+# ** Warning: (vlib-34) Library already exists at "FFT_iputf_libs/fft_ii_0".
+# vmap fft_ii_0 ./FFT_iputf_libs/fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap fft_ii_0 ./FFT_iputf_libs/fft_ii_0 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_1n128cos.hex ./
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_2n128cos.hex ./
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_1n128sin.hex ./
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_2n128sin.hex ./
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_3n128cos.hex ./
+# file copy -force E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0_3n128sin.hex ./
+# 
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_text_pkg.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:49 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_text_pkg.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_text_pkg
+# -- Compiling package body auk_dspip_text_pkg
+# -- Loading package auk_dspip_text_pkg
+# End time: 11:37:50 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_math_pkg.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:50 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_math_pkg.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_math_pkg
+# -- Compiling package body auk_dspip_math_pkg
+# -- Loading package auk_dspip_math_pkg
+# End time: 11:37:50 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_lib_pkg.vhd"                              -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:50 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_lib_pkg.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg
+# -- Compiling package auk_dspip_lib_pkg
+# End time: 11:37:50 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd"   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:51 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg
+# -- Compiling entity auk_dspip_avalon_streaming_block_sink
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_block_sink
+# End time: 11:37:51 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd" -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:51 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_block_source
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_block_source
+# End time: 11:37:51 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_roundsat.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:51 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_roundsat.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity auk_dspip_roundsat
+# -- Compiling architecture beh of auk_dspip_roundsat
+# End time: 11:37:52 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd"                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:52 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_sink
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_sink
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd(118): Nonresolved signal 'sink_next_state' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd(281):Process sink_comb_update_2
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd(283)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd(191):Process sink_comb_update_1
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_sink.vhd(193)
+# End time: 11:37:52 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd"              -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:53 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg
+# -- Compiling entity auk_dspip_avalon_streaming_source
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_source
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(164): Nonresolved signal 'count_finished' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(185):Conditional signal assignment line__184
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(172):Conditional signal assignment line__170
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(165): Nonresolved signal 'count_started' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(187):Conditional signal assignment line__186
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(176):Conditional signal assignment line__174
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(109): Nonresolved signal 'source_next_state' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(213):Process source_comb_update_2
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(220)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_source.vhd(157):Conditional signal assignment line__156
+# End time: 11:37:53 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_controller.vhd"          -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:54 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/auk_dspip_avalon_streaming_controller.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity auk_dspip_avalon_streaming_controller
+# -- Compiling architecture struct of auk_dspip_avalon_streaming_controller
+# End time: 11:37:54 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd"                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:54 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Compiling entity altera_fft_dual_port_ram
+# -- Compiling architecture rtl of altera_fft_dual_port_ram
+# End time: 11:37:55 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_dual_port_rom.vhd"                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:55 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_dual_port_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Compiling entity altera_fft_dual_port_rom
+# -- Compiling architecture rtl of altera_fft_dual_port_rom
+# End time: 11:37:55 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_mult_add.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:55 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_mult_add.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity altera_fft_mult_add
+# -- Compiling architecture rtl of altera_fft_mult_add
+# -- Loading package altera_lnsim_components
+# -- Compiling entity altera_fft_mult_add_new
+# -- Compiling architecture rtl of altera_fft_mult_add_new
+# -- Loading package altera_mf_components
+# -- Compiling entity altera_fft_mult_add_old
+# -- Compiling architecture rtl of altera_fft_mult_add_old
+# End time: 11:37:56 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_single_port_rom.vhd"              -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:56 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/altera_fft_single_port_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Compiling entity altera_fft_single_port_rom
+# -- Compiling architecture rtl of altera_fft_single_port_rom
+# End time: 11:37:56 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_fft_pkg.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:56 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/auk_fft_pkg.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_fft_pkg
+# -- Compiling package body auk_fft_pkg
+# -- Loading package auk_fft_pkg
+# End time: 11:37:56 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/hyper_pipeline_interface.v"                  -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:57 on Apr 17,2018
+# vlog -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/hyper_pipeline_interface.v -work fft_ii_0 
+# 
+# Top level modules:
+# End time: 11:37:58 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/counter_module.sv"                           -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:37:58 on Apr 17,2018
+# vlog -reportprogress 300 -sv E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/counter_module.sv -work fft_ii_0 
+# 
+# Top level modules:
+# End time: 11:38:00 on Apr 17,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/fft_pack.vhd"                                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:00 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/fft_pack.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package fft_pack
+# -- Compiling package body fft_pack
+# -- Loading package fft_pack
+# End time: 11:38:00 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_cmult_cpx.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:01 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_cmult_cpx.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package altera_mf_components
+# -- Compiling entity apn_fft_cmult_cpx
+# -- Compiling architecture model of apn_fft_cmult_cpx
+# End time: 11:38:01 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_cmult_cpx2.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:01 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_cmult_cpx2.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package altera_mf_components
+# -- Compiling entity apn_fft_cmult_cpx2
+# -- Compiling architecture model of apn_fft_cmult_cpx2
+# End time: 11:38:01 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_can.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:02 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_can.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity apn_fft_mult_can
+# -- Compiling architecture rtl of apn_fft_mult_can
+# End time: 11:38:02 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_cpx.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:02 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_cpx.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity apn_fft_mult_cpx
+# -- Compiling architecture rtl of apn_fft_mult_cpx
+# End time: 11:38:02 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_1dp_ram.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:03 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_1dp_ram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_1dp_ram
+# -- Compiling architecture syn of asj_fft_1dp_ram
+# End time: 11:38:04 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_1tdp_rom.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:04 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_1tdp_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_1tdp_rom
+# -- Compiling architecture syn of asj_fft_1tdp_rom
+# End time: 11:38:04 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3dp_rom.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:05 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3dp_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_3dp_rom
+# -- Compiling architecture syn of asj_fft_3dp_rom
+# End time: 11:38:05 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3pi_mram.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:05 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3pi_mram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_3pi_mram
+# -- Compiling architecture syn of asj_fft_3pi_mram
+# End time: 11:38:05 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3tdp_rom.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:06 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_3tdp_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_3tdp_rom
+# -- Compiling architecture syn of asj_fft_3tdp_rom
+# End time: 11:38:06 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_4dp_ram.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:06 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_4dp_ram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_4dp_ram
+# -- Compiling architecture syn of asj_fft_4dp_ram
+# End time: 11:38:07 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_6tdp_rom.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:07 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_6tdp_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_6tdp_rom
+# -- Compiling architecture syn of asj_fft_6tdp_rom
+# End time: 11:38:07 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_alt_shift_tdl.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:07 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_alt_shift_tdl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_alt_shift_tdl
+# -- Compiling architecture SYN of asj_fft_alt_shift_tdl
+# End time: 11:38:08 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_ctrl.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:08 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_ctrl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_bfp_ctrl
+# -- Compiling architecture syn of asj_fft_bfp_ctrl
+# End time: 11:38:08 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_i.vhd"                           -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:08 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_i.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_bfp_i
+# -- Compiling architecture input_bfp of asj_fft_bfp_i
+# End time: 11:38:08 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_i_1pt.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:09 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_i_1pt.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_bfp_i_1pt
+# -- Compiling architecture input_bfp of asj_fft_bfp_i_1pt
+# End time: 11:38:09 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd"                           -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:09 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_bfp_o
+# -- Compiling architecture output_bfp of asj_fft_bfp_o
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(105): Nonresolved signal 'sdet' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(1034):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(1038)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(247):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(251)
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(108): Nonresolved signal 'sdetd' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(801):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(805)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(524):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o.vhd(528)
+# End time: 11:38:09 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o_1pt.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:10 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_bfp_o_1pt.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_bfp_o_1pt
+# -- Compiling architecture output_bfp of asj_fft_bfp_o_1pt
+# End time: 11:38:10 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:10 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_burst_ctrl
+# -- Compiling architecture burst_sw of asj_fft_burst_ctrl
+# End time: 11:38:11 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl_de.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:11 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl_de.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_burst_ctrl_de
+# -- Compiling architecture cnt_sw of asj_fft_burst_ctrl_de
+# End time: 11:38:11 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl_qe.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:11 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_burst_ctrl_qe.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_burst_ctrl_qe
+# -- Compiling architecture cnt_sw of asj_fft_burst_ctrl_qe
+# End time: 11:38:12 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cmult_can.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:12 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cmult_can.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_cmult_can
+# -- Compiling architecture model of asj_fft_cmult_can
+# End time: 11:38:12 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cmult_std.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:12 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cmult_std.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_cmult_std
+# -- Compiling architecture model of asj_fft_cmult_std
+# End time: 11:38:13 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cnt_ctrl.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:13 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cnt_ctrl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cnt_ctrl
+# -- Compiling architecture cnt_sw of asj_fft_cnt_ctrl
+# End time: 11:38:13 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cnt_ctrl_de.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:13 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cnt_ctrl_de.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cnt_ctrl_de
+# -- Compiling architecture cnt_sw of asj_fft_cnt_ctrl_de
+# End time: 11:38:14 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_addr.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:14 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_addr.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cxb_addr
+# -- Compiling architecture syn of asj_fft_cxb_addr
+# End time: 11:38:14 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:14 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cxb_data
+# -- Compiling architecture syn of asj_fft_cxb_data
+# End time: 11:38:15 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data_mram.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:15 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data_mram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cxb_data_mram
+# -- Compiling architecture syn of asj_fft_cxb_data_mram
+# End time: 11:38:15 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data_r.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:15 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_cxb_data_r.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_cxb_data_r
+# -- Compiling architecture syn of asj_fft_cxb_data_r
+# End time: 11:38:16 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dataadgen.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:16 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dataadgen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_dataadgen
+# -- Compiling architecture gen_all of asj_fft_dataadgen
+# End time: 11:38:16 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_data_ram.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:17 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_data_ram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_data_ram
+# -- Compiling architecture SYN of asj_fft_data_ram
+# End time: 11:38:17 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_data_ram_dp.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:17 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_data_ram_dp.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_data_ram_dp
+# -- Compiling architecture SYN of asj_fft_data_ram_dp
+# End time: 11:38:17 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dft_bfp.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:18 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dft_bfp.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_dft_bfp
+# -- Compiling architecture dft_r4 of asj_fft_dft_bfp
+# End time: 11:38:18 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dft_bfp_sgl.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:18 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dft_bfp_sgl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_dft_bfp_sgl
+# -- Compiling architecture dft_r4 of asj_fft_dft_bfp_sgl
+# End time: 11:38:19 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dpi_mram.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:19 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dpi_mram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_dpi_mram
+# -- Compiling architecture syn of asj_fft_dpi_mram
+# End time: 11:38:19 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dp_mram.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:19 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dp_mram.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_dp_mram
+# -- Compiling architecture syn of asj_fft_dp_mram
+# End time: 11:38:20 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dualstream.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:20 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_dualstream.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_dualstream
+# -- Compiling architecture transform of asj_fft_dualstream
+# End time: 11:38:20 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_in_write_sgl.vhd"                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:20 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_in_write_sgl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_in_write_sgl
+# -- Compiling architecture writer of asj_fft_in_write_sgl
+# End time: 11:38:21 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lcm_mult.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:21 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lcm_mult.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_lcm_mult
+# -- Compiling architecture mult of asj_fft_lcm_mult
+# End time: 11:38:22 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lcm_mult_2m.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:22 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lcm_mult_2m.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_lcm_mult_2m
+# -- Compiling architecture mult of asj_fft_lcm_mult_2m
+# End time: 11:38:22 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:22 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_lpp
+# -- Compiling architecture dft of asj_fft_lpp
+# End time: 11:38:23 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpprdadgen.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:23 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpprdadgen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_lpprdadgen
+# -- Compiling architecture gen_all of asj_fft_lpprdadgen
+# End time: 11:38:23 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpprdadr2gen.vhd"                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:23 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpprdadr2gen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_lpprdadr2gen
+# -- Compiling architecture gen_all of asj_fft_lpprdadr2gen
+# End time: 11:38:23 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp_serial.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:24 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp_serial.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_lpp_serial
+# -- Compiling architecture lp of asj_fft_lpp_serial
+# End time: 11:38:24 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp_serial_r2.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:24 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_lpp_serial_r2.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_lpp_serial_r2
+# -- Compiling architecture lp of asj_fft_lpp_serial_r2
+# End time: 11:38:24 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_mult_add.vhd"                        -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:25 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_mult_add.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_mult_add
+# -- Compiling architecture syn of asj_fft_mult_add
+# End time: 11:38:25 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:25 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_m_k_counter
+# -- Compiling architecture gen_all of asj_fft_m_k_counter
+# ** Warning: E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(69): Nonresolved signal 'k_state' may have multiple sources.
+#   Drivers:
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(665):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(669)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(501):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(505)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(322):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(326)
+#     E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(165):Process fsm
+#        Driven at:
+#           E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_m_k_counter.vhd(169)
+# End time: 11:38:26 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_pround.vhd"                          -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:26 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_pround.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_pround
+# -- Compiling architecture AROUNDPIPE_SYNTH of asj_fft_pround
+# End time: 11:38:26 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_sglstream.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:26 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_sglstream.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_sglstream
+# -- Compiling architecture transform of asj_fft_sglstream
+# End time: 11:38:27 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_de_so_b.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:27 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_de_so_b.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_de_so_b
+# -- Compiling architecture transform of asj_fft_si_de_so_b
+# End time: 11:38:27 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_de_so_bb.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:28 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_de_so_bb.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_de_so_bb
+# -- Compiling architecture transform of asj_fft_si_de_so_bb
+# End time: 11:38:28 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_qe_so_b.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:28 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_qe_so_b.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_qe_so_b
+# -- Compiling architecture transform of asj_fft_si_qe_so_b
+# End time: 11:38:29 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_qe_so_bb.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:29 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_qe_so_bb.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_qe_so_bb
+# -- Compiling architecture transform of asj_fft_si_qe_so_bb
+# End time: 11:38:29 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_se_so_b.vhd"                      -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:30 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_se_so_b.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_se_so_b
+# -- Compiling architecture transform of asj_fft_si_se_so_b
+# End time: 11:38:30 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_se_so_bb.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:30 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_se_so_bb.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_se_so_bb
+# -- Compiling architecture transform of asj_fft_si_se_so_bb
+# End time: 11:38:31 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_sose_so_b.vhd"                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:31 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_si_sose_so_b.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package fft_pack
+# -- Loading package auk_dspip_math_pkg
+# -- Loading package auk_dspip_lib_pkg
+# -- Compiling entity asj_fft_si_sose_so_b
+# -- Compiling architecture transform of asj_fft_si_sose_so_b
+# End time: 11:38:31 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl.vhd"                             -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:32 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_tdl
+# -- Compiling architecture syn of asj_fft_tdl
+# End time: 11:38:32 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_bit.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:32 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_bit.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_tdl_bit
+# -- Compiling architecture syn of asj_fft_tdl_bit
+# End time: 11:38:32 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_bit_rst.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:32 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_bit_rst.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_tdl_bit_rst
+# -- Compiling architecture syn of asj_fft_tdl_bit_rst
+# End time: 11:38:33 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_rst.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:33 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_tdl_rst.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_tdl_rst
+# -- Compiling architecture syn of asj_fft_tdl_rst
+# End time: 11:38:33 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadgen.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:33 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadgen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_twadgen
+# -- Compiling architecture gen_all of asj_fft_twadgen
+# End time: 11:38:34 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadgen_dual.vhd"                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:34 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadgen_dual.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_twadgen_dual
+# -- Compiling architecture gen_all of asj_fft_twadgen_dual
+# End time: 11:38:34 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadsogen.vhd"                       -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:34 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadsogen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_twadsogen
+# -- Compiling architecture gen_all of asj_fft_twadsogen
+# End time: 11:38:35 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadsogen_q.vhd"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:35 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twadsogen_q.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_twadsogen_q
+# -- Compiling architecture gen_all of asj_fft_twadsogen_q
+# End time: 11:38:35 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twiddle_ctrl_qe.vhd"                 -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:35 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twiddle_ctrl_qe.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_twiddle_ctrl_qe
+# -- Compiling architecture cnt_sw of asj_fft_twiddle_ctrl_qe
+# End time: 11:38:36 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twid_rom_tdp.vhd"                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:36 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_twid_rom_tdp.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity asj_fft_twid_rom_tdp
+# -- Compiling architecture SYN of asj_fft_twid_rom_tdp
+# End time: 11:38:36 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl.vhd"                   -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:37 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_unbburst_ctrl
+# -- Compiling architecture burst_sw of asj_fft_unbburst_ctrl
+# End time: 11:38:37 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl_de.vhd"                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:37 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl_de.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_unbburst_ctrl_de
+# -- Compiling architecture cnt_sw of asj_fft_unbburst_ctrl_de
+# End time: 11:38:37 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl_qe.vhd"                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:37 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_ctrl_qe.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_unbburst_ctrl_qe
+# -- Compiling architecture cnt_sw of asj_fft_unbburst_ctrl_qe
+# End time: 11:38:38 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_sose_ctrl.vhd"              -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:38 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_unbburst_sose_ctrl.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_unbburst_sose_ctrl
+# -- Compiling architecture burst_sw of asj_fft_unbburst_sose_ctrl
+# End time: 11:38:38 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_wrengen.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:38 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_wrengen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_wrengen
+# -- Compiling architecture gen_all of asj_fft_wrengen
+# End time: 11:38:39 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_wrswgen.vhd"                         -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:39 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/asj_fft_wrswgen.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Compiling entity asj_fft_wrswgen
+# -- Compiling architecture gen_all of asj_fft_wrswgen
+# End time: 11:38:39 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/twid_rom.vhd"                                -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:39 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/twid_rom.vhd -work fft_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package fft_pack
+# -- Loading package LPM_COMPONENTS
+# -- Loading package altera_mf_components
+# -- Compiling entity twid_rom
+# -- Compiling architecture SYN of twid_rom
+# End time: 11:38:40 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v"                     -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:40 on Apr 17,2018
+# vlog -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v -work fft_ii_0 
+# 
+# Top level modules:
+# End time: 11:38:41 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0.sv"                                    -work fft_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:41 on Apr 17,2018
+# vlog -reportprogress 300 -sv E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/submodules/FFT_fft_ii_0.sv -work fft_ii_0 
+# -- Compiling module FFT_fft_ii_0
+# 
+# Top level modules:
+# 	FFT_fft_ii_0
+# End time: 11:38:42 on Apr 17,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom     "E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/FFT.vhd"                                                                     
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:42 on Apr 17,2018
+# vcom -reportprogress 300 E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/simulation/FFT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FFT
+# -- Compiling architecture rtl of FFT
+# End time: 11:38:42 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# vcom -93 -work work {E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/testbench/FFT_tb/simulation/FFT_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:42 on Apr 17,2018
+# vcom -reportprogress 300 -93 -work work E:/Kolya/logic2/Spring2018_CMPN111/IP_Catalog/FFT/testbench/FFT_tb/simulation/FFT_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FFT_tb
+# -- Compiling architecture rtl of FFT_tb
+# End time: 11:38:42 on Apr 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L fft_ii_0 -voptargs="+acc"  FFT_tb.vhd
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L fft_ii_0 -voptargs=""+acc"" FFT_tb.vhd 
+# Start time: 11:38:44 on Apr 17,2018
+# ** Error (suppressible): (vsim-19) Failed to access library 'FFT_tb' at "FFT_tb".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./FFT_run_msim_rtl_vhdl.do PAUSED at line 121
+# End time: 11:40:48 on Apr 17,2018, Elapsed time: 0:02:04
+# Errors: 1, Warnings: 0
